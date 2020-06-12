@@ -282,14 +282,14 @@ def download_and_install_update_if_available():
 
 def start():
     
-    print("Starting program 5s delay")
+    print("Starting program 1s delay")
     led = Pin(2,Pin.OUT)
 
     while(1):
         led.value(1)
-        time.sleep(5)
+        time.sleep(1)
         led.value(0)
-        time.sleep(5)
+        time.sleep(1)
 
 
 def boot():
@@ -297,4 +297,4 @@ def boot():
     start()
 
 
-boot()
+start()
