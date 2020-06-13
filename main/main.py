@@ -1,6 +1,3 @@
-
-from machine import Pin
-
 def start():
     
     print("Starting program 2s delay")
