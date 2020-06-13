@@ -1,12 +1,8 @@
 from machine import Pin
+from time import sleep
 
-def start():
-    print("Led blinking with 1 delay")
-    
-    while(1):
-        led = Pin(2, Pin.OUT)
-        led.high()
-        sleep(1)
-        led.low()
-        sleep(1)
-    
+led = Pin(2, Pin.OUT)
+print('Should do something')
+while True:
+  led.value(not led.value())
+  sleep(0.5)
