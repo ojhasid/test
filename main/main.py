@@ -4,7 +4,7 @@ def start():
     print("Led blinking with 1 delay")
     
     while(1):
-        led = machine.Pin(2, Pin.OUT)
+        led = Pin(2, Pin.OUT)
         led.high()
         sleep(1)
         led.low()
