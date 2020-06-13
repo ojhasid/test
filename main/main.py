@@ -1,9 +1,4 @@
-from machine import Pin
-import time
-import usocket
-import os
-import gc
-import machine
+
 
 def start():
     
@@ -15,5 +10,3 @@ def start():
         time.sleep(1)
         led.value(0)
         time.sleep(1)
-
-start()
